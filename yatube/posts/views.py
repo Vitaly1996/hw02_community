@@ -6,6 +6,7 @@ from .models import Group
 
 date = 10
 
+
 def index(request):
     posts = Post.objects.order_by('-pub_date')[:date]
     context = {
